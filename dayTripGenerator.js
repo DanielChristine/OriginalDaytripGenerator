@@ -84,14 +84,33 @@ function randomRestaurant(){
 
 
 
-console.log(dayTrip);
 
+console.log(dayTrip);
 
 
 function useProgram(){
 
+var question = prompt("Are you satisfied? Yes or no?");
 
+if (question === "No"){
+
+randomDestination();
+randomEntertainment();
+randomTransportation();
+randomRestaurant();
+console.log(dayTrip);
+
+    var question = prompt("Would you like to try again? Yes or No?");
+}
+            
+        
+        else{
+        console.log(dayTrip);
+    }
 
     console.log ("Our suggested trip is: " + dayTrip);
 }
+
+useProgram();
+
 
