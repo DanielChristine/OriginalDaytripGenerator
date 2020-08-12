@@ -93,6 +93,7 @@ function useProgram(){
 var question = prompt("Are you satisfied? Yes or no?");
 
 if (question === "No"){
+    dayTrip = [];
 
 randomDestination();
 randomEntertainment();
@@ -102,15 +103,11 @@ console.log(dayTrip);
 
     var question = prompt("Would you like to try again? Yes or No?");
 }
-            
-        
         else{
         console.log(dayTrip);
     }
-
     console.log ("Our suggested trip is: " + dayTrip);
 }
-
 useProgram();
 
 
