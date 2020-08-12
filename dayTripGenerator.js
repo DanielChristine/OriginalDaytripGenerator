@@ -32,29 +32,66 @@ function random(){
 
 
 
-let randomIndex = random();
-console.log(randomIndex);
+randomDestination();
+randomEntertainment();
+randomTransportation();
+randomRestaurant();
 
-console.log(destination[randomIndex]);
+/////////////////////////////////////////////////////////////////////
+function randomDestination(){
+    let randomIndex = random();
 
-function findEntertainment(){
 
+    var findDestination = destination[randomIndex];
+    dayTrip.push(findDestination);
+    return findDestination;
 }
+
+
+function randomEntertainment(){
+    let randomIndex = random();
+
+
+    var findEntertainment = entertainment[randomIndex];
+    dayTrip.push(findEntertainment);
+    return findEntertainment;
+    
+}
+
+
+function randomTransportation(){
+    let randomIndex = random();
+
+
+    var findTransportation = transportation[randomIndex];
+    dayTrip.push(findTransportation);
+    return findTransportation;
+    
+}
+
+
+function randomRestaurant(){
+    let randomIndex = random();
+
+
+    var findRestaurant = restaurant[randomIndex];
+    dayTrip.push(findRestaurant);
+    
+    return findRestaurant;
+    
+}
+////////////////////////////////////////////////////////////////////////////
+
+
+
+console.log(dayTrip);
 
 
 
 function useProgram(){
 
-var findDestination = ("");
-
-    
-    for(var i = 0; i < location.length; i++) {
-        dayTrip.push(random);
-        
 
 
-
-    }
     console.log ("Our suggested trip is: " + dayTrip);
 }
 
